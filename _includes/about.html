@@ -15,16 +15,31 @@
     }
     .article_detail{
         margin: 20px 20px;
-        text-align: left;
+        text-align: center;
         font-size: 14px;
         color: dimgrey;
     }
-    .video_detail{
+    .video_detail {
         margin-left: 2%;
+    }
 	.tupian{
-		align-content: center;
-		height: 20px;
-		width: 15px;
+		width: 300px;
+        margin: auto;
+        height: 300px;
+    }
+    .img{
+        margin: 10px auto;
+        height: 300px;
+        width : 700px;
+    }
+    .blog{
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-image: url({{'/assets/back.jpg'}});
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
     }
 </style>
 
@@ -36,43 +51,51 @@
 <audio src="{{ '/video/1.mp3' }}" id="music" > </audio>
 
 <div class="video">
-<video class="video_detail" width="30%" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
-您的浏览器不支持 video 标签。 
-</video>
-<video class="video_detail" width="30%" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
+<video class="video_detail" width="30%" src="{{ '/video/1.mp4' }}" controls="controls">
     您的浏览器不支持 video 标签。
 </video>
-<video class="video_detail" width="30%" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
+<video class="video_detail" width="30%" src="{{ '/video/2.avi' }}" controls="controls">
+    您的浏览器不支持 video 标签。
+</video>
+<video class="video_detail" width="30%" src="{{ '/video/3.avi' }}" controls="controls">
     您的浏览器不支持 video 标签。
 </video>
 </div>
 <div class="article">
     <a href="{{ site.url }}/resume">My Resume</a>
 </div>
-
-<div class="place">
-    My blog
-</div>
-<div class="article_detail" >
-    白雪纷纷何所似 未若柳絮因风起<br/>
-    不紧不慢，漫天飘洒 <br />
-轻舞飞扬，不愿停息 闭上眼，静静听<br />
-<img class="tupian" src="{{'/assets/1575157486144.png'}}" />
-<img class="tupian" src="{{'/assets/1575157493760.png'}}" />
-<img class="tupian" src="{{'/assets/mmexport1577251494625.png'}}" />
-<img class="tupian" src="{{'/mmexport1577251526789.png'}}" />
-雪，落下的声音 轻轻，落在掌心 静静，在掌中融化<br />
-一场飞雪，一座城 故宫的雪，总是别有韵味<br />
-</div>
-<div class="article_detail">
-    这世上唯有美食不可辜负也
-	<img class="tupian" src="{{'/assets/IMG_20191109_171611.png'}}" />
-	<img class="tupian" src="{{'/assets/IMG_20191111_203935.png'}}" />
-	<img class="tupian" src="{{'/assets/IMG_20191123_114730.png'}}" />
-	<img class="tupian" src="{{'/assets/IMG_20191130_180057.png'}}" />
-</div>
-<div class="article_detail">
-    我的故事3
+<div class="blog">
+    <div class="place">
+        My blog
+    </div>
+    <div class="article_detail" >
+        今年，北京迎来了入冬后第二场降雪。这场大雪的到来，距离第一场雪仅隔了半个月。雪量虽没达到“暴”的程度，但是雪景依然美不胜收！
+        <br />
+        <div class="img">
+            <img class="tupian" src="{{'/assets/1.jpg'}}" />
+            <img class="tupian" src="{{'/assets/3.jpg'}}" />
+        </div>
+        <div class="img">
+            <img class="tupian" src="{{'/assets/mmexport1577251494625.png'}}" />
+            <img class="tupian" src="{{'/assets/4.jpg'}}" />
+        </div>
+    </div>
+    <div class="article_detail">
+        这世上唯有美食不可辜负也
+        <br />
+        <br />
+        <div class="img">
+            <img class="tupian" src="{{'/assets/IMG_20191109_171611.png'}}" />
+            <img class="tupian" src="{{'/assets/IMG_20191111_203935.png'}}" />
+        </div>
+        <div class="img">
+            <img class="tupian" src="{{'/assets/IMG_20191123_114730.png'}}" />
+            <img class="tupian" src="{{'/assets/IMG_20191130_180057.png'}}" />
+        </div>
+    </div>
+    <div class="article_detail">
+        我的故事3
+    </div>
 </div>
 <script type="text/javascript">
     function toggleSound() {
