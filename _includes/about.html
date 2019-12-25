@@ -1,16 +1,63 @@
+<style>
+    .place{
+        margin-top: 30px;
+        text-align: center;
+        font-size:  30px;
+        color:      #1F547E;
+    }
+    .article{
+        font-size: 30px;
+        text-align: center;
+    }
+    .article a{
+        color:gray;
+        text-decoration:none;
+    }
+    .article_detail{
+        margin: 20px 20px;
+        text-align: left;
+        font-size: 14px;
+        color:gray;
+    }
+    .video_detail{
+        margin-left: 3%;
+    }
+</style>
+
 <div class="user-details">
   <h1>Welcome to WangQian's first blog</h1>
-  <p>{{ site.user_description }}</p>
+  <p onclick="toggleSound()">{{ site.user_description }}</p>
 </div>
 
 <audio src="{{ '/video/1.mp3' }}" id="music" > </audio>
 
-<video width="300" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
+<div class="video">
+<video class="video_detail" width="30%" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
 您的浏览器不支持 video 标签。 
 </video>
-<div onclick="toggleSound()">点击播放</div>
+<video class="video_detail" width="30%" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
+    您的浏览器不支持 video 标签。
+</video>
+<video class="video_detail" width="30%" src="https://vdept.bdstatic.com/6963506b64334b4e3769765769546c4c/6a3438444141647a/30b682f857cda03a66b17626a00c7e5ed2c64461b4ad38336fa4d449289f21fdf72994f7f0ed4a101216c8eb626fdf1d.mp4?auth_key=1577249237-0-0-c683b4615217511a7a741ec7673d8ffe" controls="controls">
+    您的浏览器不支持 video 标签。
+</video>
+</div>
 <div class="article">
-   <a href="{{ site.url }}/resume">这是我的简历：</h1>
+    <a href="{{ site.url }}/resume">My Resume</a>
+</div>
+
+<div class="place">
+    我的故事
+</div>
+
+<div class="article_detail">
+    我的故事1
+</div>
+<div class="article_detail">
+    我的故事2
+</div>
+<div class="article_detail">
+    我的故事3
 </div>
 <script type="text/javascript">
     function toggleSound() {
