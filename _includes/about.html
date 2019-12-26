@@ -15,7 +15,7 @@
     }
     .article_detail{
         margin: 20px 20px;
-        text-align: center;
+        text-align: left;
         font-size: 20px;
         color: whitesmoke;
     }
@@ -36,10 +36,30 @@
         width: 100%;
         height: 100vh;
         margin: 0 auto;
-        background-image: url({{'/assets/back.jpg'}});
+        background-image: url({{'/assets/back'}});
         background-repeat: no-repeat;
         background-size: cover;
         overflow: auto;
+    }
+    .favicon{
+    	width: 40px;
+    }
+    .title{
+    	float: left;
+    	margin-left:10px;
+    }
+    .page{
+    	font-size: 12px;
+    	color:#00A818;
+    	margin: 10px auto;
+    }
+    .content a{
+    	text-decoration: none;
+    	color:#00ADEF;
+    }
+    .content{
+    	text-align: center;
+    	clear: both;
     }
 </style>
 
@@ -69,36 +89,76 @@
         My blog
     </div>
     <div class="article_detail" >
-        今年，北京迎来了入冬后第二场降雪。这场大雪的到来，距离第一场雪仅隔了半个月。雪量虽没达到“暴”的程度，但是雪景依然美不胜收！
+    	<div class="title">
+    		<img class="favicon" src="{{'/assets/favicon'}}">
+    	</div>
+    	<div class="title">
+    		<font color="#1EBBEE">Summer</font>
+    		<br />
+        	今年，北京迎来了入冬后第二场降雪。这场大雪的到来，距离第一场雪仅隔了半个月。雪量虽没达到“暴”的程度，但是雪景依然美不胜收！
+       </div>
+        <br />
         <br />
         <div class="img">
-            <img class="tupian" src="{{'/assets/1.jpg'}}" />
-            <img class="tupian" src="{{'/assets/3.jpg'}}" />
+            <img class="tupian" src="{{'/assets/1'}}" />
+            <img class="tupian" src="{{'/assets/3'}}" />
         </div>
         <div class="img">
-            <img class="tupian" src="{{'/assets/mmexport1577251494625.png'}}" />
-            <img class="tupian" src="{{'/assets/4.jpg'}}" />
+            <img class="tupian" src="{{'/assets/mmexport1577251494625'}}" />
+            <img class="tupian" src="{{'/assets/4'}}" />
+        </div>
+        <div class="page">
+        	北京·故宫
+        	<br />
+        	2019-12-20
         </div>
     </div>
+    <hr />
     <div class="article_detail">
-        这世上唯有美食不可辜负也，让我们一起大口吃肉吧！!
+    	<div class="title">
+    		<img class="favicon" src="{{'/assets/favicon'}}">
+    	</div>
+    	<div class="title">
+    		<font color="#1EBBEE">Summer</font>
+    		<br />
+        	   这世上唯有美食不可辜负也，让我们一起大口吃肉吧！!
+       </div>
         <br />
         <br />
         <div class="img">
-            <img class="tupian" src="{{'/assets/IMG_20191109_171611.png'}}" />
-            <img class="tupian" src="{{'/assets/IMG_20191111_203935.png'}}" />
+            <img class="tupian" src="{{'/assets/5'}}" />
+            <img class="tupian" src="{{'/assets/6'}}" />
         </div>
         <div class="img">
-            <img class="tupian" src="{{'/assets/IMG_20191123_114730.png'}}" />
-            <img class="tupian" src="{{'/assets/IMG_20191130_180057.png'}}" />
+            <img class="tupian" src="{{'/assets/7'}}" />
+            <img class="tupian" src="{{'/assets/8'}}" />
+        </div>
+         <div class="page">
+        	重庆·南坪
+        	<br />
+        	2019-12-21
         </div>
     </div>
+      <hr />
     <div class="article_detail">
-        <a href="{{site.url}}/markdown">小组翻译项目报告</a>
+    	<div class="title">
+    		<img class="favicon" src="{{'/assets/favicon'}}">
+    	</div>
+    	<div class="title">
+    		<font color="#1EBBEE">Summer</font>
+    		<br />
+        	 呕心沥血的小组作业<br />
+       </div>
+       <div class="content">
+       	 	<a href="{{site.url}}/markdown">小组翻译项目报告</a><br />
+        	 <a href="{{site.url}}/markdown2">小组翻译成品展示</a>
+       </div>
+     	<div class="page">
+        	重庆·第二师范学院
+        	<br />
+        	2019-12-22
+        </div>
     </div>
-	<div class="article_detail">
-	    <a href="{{site.url}}/markdown2">小组翻译成品展示</a>
-	</div>
 </div>
 <script type="text/javascript">
     function toggleSound() {
