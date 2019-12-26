@@ -66,14 +66,19 @@
     	text-align: center;
     	clear: both;
     }
+    .tag{
+    	width: 20px;
+    }
+    
 </style>
 
 <div class="user-details">
   <h1>Welcome to WangQian's first blog</h1>
-  <p onclick="toggleSound()">{{ site.user_description }}</p>
+  <p >{{ site.user_description }}<span onclick="toggleSound()"><img class="tag" src="{{'/assets/timg.jpg'}}" /></span> </p>
+  
+  <audio src="{{ '/video/1.mp3' }}" id="music"> </audio>
 </div>
 
-<audio src="{{ '/video/1.mp3' }}" id="music" > </audio>
 
 <div class="video">
 <video class="video_detail" width="30%" src="{{ '/video/1.mp4' }}" controls="controls">
